@@ -1,0 +1,122 @@
+================================================================================
+================================================================================
+================================================================================
+================================================================================
+================================================================================
+=                               ____  _     ____                               =
+=                              |  _ \| |   / ___|                              =
+=                              | | | | |  | |                                  =
+=                              | |_| | |__| |___                               =
+=                              |____/|_____\____|                              =
+=                                                                              =
+=                                                                              =
+================================================================================
+================================================================================
+=   ____                      _      _____           _                         =
+=  |  _ \ __ _ _ __ ___ _ __ | |_   / /_ _|_ __   __| | ___ _ __   ___ _ __    =
+=  | |_) / _` | '__/ _ \ '_ \| __| / / | || '_ \ / _` |/ _ \ '_ \ / _ \ '_ \   =
+=  |  __/ (_| | | |  __/ | | | |_ / /  | || | | | (_| |  __/ |_) |  __/ | | |  =
+=  |_|   \__,_|_|  \___|_| |_|\__/_/  |___|_| |_|\__,_|\___| .__/ \___|_| |_|  =
+=                                                          |_|                 =
+=                     _            _     ____        _ _     _                 =
+=                  __| | ___ _ __ | |_  | __ ) _   _(_) | __| |                =
+=                 / _` |/ _ \ '_ \| __| |  _ \| | | | | |/ _` |                =
+=                | (_| |  __/ | | | |_  | |_) | |_| | | | (_| |                =
+=                 \__,_|\___|_| |_|\__| |____/ \__,_|_|_|\__,_|                =
+=                                                                              =
+=                                                                              =
+================================================================================
+Not in terminal, reprint now using normal build-in print function.
+
+
+BuildE3CPUPTInferencePy3DockerImage
+BuildE3CPUPTInferencePy3DockerImage
+
+Traceback (most recent call last):
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/docker/transport/unixconn.py", line 43, in connect
+    sock.connect(self.unix_socket)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/util/retry.py", line 410, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/docker/transport/unixconn.py", line 43, in connect
+    sock.connect(self.unix_socket)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/main.py", line 91, in <module>
+    main()
+  File "src/main.py", line 87, in main
+    image_builder(args.buildspec)
+  File "/Users/nikhilsk/nskool/deep-learning-containers/src/image_builder.py", line 196, in image_builder
+    pushed_images += process_images(parent_images, "Parent/Independent")
+  File "/Users/nikhilsk/nskool/deep-learning-containers/src/image_builder.py", line 249, in process_images
+    build_images(pre_push_image_list)
+  File "/Users/nikhilsk/nskool/deep-learning-containers/src/image_builder.py", line 395, in build_images
+    FORMATTER.progress(THREADS)
+  File "/Users/nikhilsk/nskool/deep-learning-containers/src/output.py", line 104, in progress
+    "." * 10 + constants.STATUS_MESSAGE[futures[image].result()]
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/nikhilsk/nskool/deep-learning-containers/src/image.py", line 151, in build
+    self.docker_build(fileobj=context_file, custom_context=True)
+  File "/Users/nikhilsk/nskool/deep-learning-containers/src/image.py", line 177, in docker_build
+    for line in self.client.build(
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/docker/api/build.py", line 263, in build
+    response = self._post(
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/docker/utils/decorators.py", line 46, in inner
+    return f(self, *args, **kwargs)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/docker/api/client.py", line 226, in _post
+    return self.post(url, **self._set_request_timeout(kwargs))
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/requests/sessions.py", line 590, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/nikhilsk/opt/miniconda3/envs/conda_py38/lib/python3.8/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))
