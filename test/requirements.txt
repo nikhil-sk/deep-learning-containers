@@ -1,4 +1,4 @@
-docker==4.2.0
+docker==6.0.0
 fabric==2.5.0
 junit-xml==1.9
 packaging==20.1
